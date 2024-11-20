@@ -6,14 +6,14 @@ public interface OutfitRequirements {
     Shoes createShoes();
 }
 
-interface Top {
+public interface Top {
     void display();
 }
 
-interface Pants {
+public interface Pants {
     void display();
 }
 
-interface Shoes {
+public interface Shoes {
     void display();
 }
