@@ -22,4 +22,4 @@ public class CasualFactory implements OutfitRequirements {
             return new CasualShoes();
         }
     }
-}
+
