@@ -8,11 +8,11 @@ public class ProfessionalFactory implements OutfitRequirements {
 
     @Override
     public Pants createPants() {
-        return new ProfessionalPants();
+        return new ProPants();
     }
 
     @Override
     public Shoes createShoes() {
-        return new ProfessionalShoes();
+        return new ProShoes();
     }
 }
