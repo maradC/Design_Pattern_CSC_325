@@ -1,17 +1,37 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import party.PartyFactory;
+//Driver Class
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        OutfitRequirements partyFactory = new PartyFactory();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Top partyTop = partyFactory.createTop();
+        Pants partyPants = partyFactory.createPants();
+        Shoes partyShoes = partyFactory.createShoes();
+
+        // Display the Party outfit
+        System.out.println("Party Outfit:");
+        partyTop.display();
+        partyPants.display();
+        partyShoes.display();
+
+        //Purposely to give an issue
+
+        OutfitRequirements professionalFactory = new ProfessionalFactory();
+
+        Top casualTop = professionalFactory.createTop();
+        Pants casualPants = professionalFactory.createPants();
+        Shoes casualShoes = professionalFactory.createShoes();
+
+        // Display the incorrectly paired outfit
+        System.out.println("\nInconsistent Outfit:");
+        casualTop.display();
+        casualPants.display();
+        casualShoes.display();
     }
 }
+
+
+
