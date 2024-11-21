@@ -1,6 +1,4 @@
-Sure! Here's an example of a README file for your garment simulator project using the Abstract Factory design pattern:
 
----
 
 # Garment Simulator
 
@@ -116,10 +114,3 @@ Party Shoes
 5. Push to the branch (`git push origin feature-branch`).
 6. Create a pull request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-This README provides an overview of how the project works, how to use it, and a brief explanation of the Abstract Factory pattern applied to the garment simulator. Let me know if you'd like to add more details!
